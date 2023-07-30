@@ -1,0 +1,62 @@
+*.font: xft:Hack Nerd Font:style=Regular:size=10
+
+
+! Colors
+!  Transparent frame
+!  *.depth: 32
+!*.background: #0e0e0e 
+!*.foreground: #f0f0f0
+
+! Argonaut
+*.color0: #232323
+*.color8: #444444
+*.color1: #ff000f
+*.color9: #ff2740
+*.color2: #8ce10b
+*.color10: #abe15b
+*.color3: #ffb900
+*.color11: #ffd242
+*.color4: #008df8
+*.color12: #0092ff
+*.color5: #6d43a6
+*.color13: #9a5feb
+*.color6: #00d8eb
+*.color14: #67fff0
+*.color7: #ffffff
+*.color15: #eeeeee
+*.background: #0E1019
+*.foreground: #FFFAF4
+
+! Afterglow
+!*.color0: #151515
+!*.color8: #505050
+!*.color1: #A53C23
+!*.color9: #A53C23
+!*.color2: #7B9246
+!*.color10: #7B9246
+!*.color3: #D3A04D
+!*.color11: #D3A04D
+!*.color4: #6C99BB
+!*.color12: #547C99
+!*.color5: #9F4E85
+!*.color13: #9F4E85
+!*.color6: #7DD6CF
+!*.color14: #7DD6CF
+!*.color7: #D0D0D0
+!*.color15: #F5F5F5
+!!*.background: #222222 
+!*.foreground: #D0D0D0
+
+
+! Settings
+
+*.geometry: 80x-1
+*.scrollBar: false
+*.internalBorder: 10
+
+*.iso14755: false
+*.keysym.Shift-Control-V: eval:paste_clipboard
+*.keysym.Shift-Control-C: eval:selection_to_clipboard
+*.perl-ext-common: default,matcher
+*.url-launcher: /usr/bin/opera
+*.matcher.button: 1
