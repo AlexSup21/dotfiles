@@ -3,7 +3,7 @@ slstatus &
 ~/.fehbg &
 picom --config ~/.config/picom/picom.conf &
 dunst &
-~/.config/notifs/battery/bat_notif.sh &
+/usr/local/bin/bat_notif.sh &
 setxkbmap pl &
 xbindkeys &
 iwctl station wlan0 disconnect &

@@ -66,15 +66,17 @@
 #  Control + b:2 + Release
 
 # Increase volume
-"pactl set-sink-volume @DEFAULT_SINK@ +1000"
+#"pactl set-sink-volume @DEFAULT_SINK@ +1000"
+"pamixer -i 1; volume.sh"
     XF86AudioRaiseVolume
 
 # Decrease volume
-"pactl set-sink-volume @DEFAULT_SINK@ -1000"
+#"pactl set-sink-volume @DEFAULT_SINK@ -1000"
+"pamixer -d 1; volume.sh"
     XF86AudioLowerVolume
 
 # Mute volume
-"pactl set-sink-mute @DEFAULT_SINK@ toggle"
+"pactl set-sink-mute @DEFAULT_SINK@ toggle; mute.sh"
     XF86AudioMute
 
 # Mute microphone
@@ -83,11 +85,11 @@
     XF86AudioMicMute
 
 # Decrease backlight
-"xbacklight -dec 5"
+"xbacklight -dec 1; brightness.sh"
     XF86MonBrightnessDown
 
 # Increase backlight
-"xbacklight -inc 5"
+"xbacklight -inc 1; brightness.sh"
     XF86MonBrightnessUp
 
 # Notifs pop
@@ -103,11 +105,11 @@
     XF86Calculator
 
 # Toggle touchpad
-"/usr/local/bin/touchpad_toggle.sh"
+"touchpad_toggle.sh"
     XF86TouchpadToggle
 
 # Print screen
-"scrot ~/images/screenshots/%Y-%m-%d_%T.png"
+"scrot ~/images/screenshots/%Y-%m-%d_%T.png; dunstify -a 'PrtSc' 'Screenshot Taken' -i camera-photo-symbolic -u low"
     Print
 
 ##################################
