@@ -12,6 +12,7 @@ export VISUAL=nvim
 alias ls='exa --group -laa'
 alias grep='grep --color=auto'
 alias lst='exa --tree -a'
+alias vi='nvim'
 
 #PS1="$DEFAULT"
 DEFAULT="$PS1"
@@ -26,3 +27,4 @@ BOLD="\[$(tput bold)\]"
 RESET="\[$(tput sgr0)\]"
 
 PS1="${BOLD}${RED}@${GREEN}\u${WHITE}: ${BLUE}\w\n${WHITE}└\$ ${RESET}"
+export PATH=/home/alex/.nimble/bin:/usr/local/sbin:/usr/local/bin:/usr/bin:/home/alex/.dotnet/tools:/usr/lib/jvm/default/bin:/usr/bin/site_perl:/usr/bin/vendor_perl:/usr/bin/core_perl:~/.dotnet/tools:~/.dotnet/tools

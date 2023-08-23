@@ -112,6 +112,10 @@
 "scrot ~/images/screenshots/%Y-%m-%d_%T.png; dunstify -a 'PrtSc' 'Screenshot Taken' -i camera-photo-symbolic -u low"
     Print
 
+# Open iwctl
+"urxvt -e sh -c 'iwctl station wlan0 scan; sleep 3; iwctl station wlan0 get-networks; iwctl'"
+    control + XF86Launch1
+
 ##################################
 # End of xbindkeys configuration #
 ##################################

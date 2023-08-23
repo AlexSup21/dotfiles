@@ -23,8 +23,12 @@ settings:
         K: tab-next
   colors.webpage.preferred_color_scheme:
     global: dark
+  content.geolocation:
+    https://opencaching.pl: true
   content.notifications.enabled:
     https://www.reddit.com: false
+  content.register_protocol_handler:
+    https://mail.google.com?extsrc=mailto&url=%25s: true
   fonts.completion.entry:
     global: default_size default_family
   fonts.contextmenu:

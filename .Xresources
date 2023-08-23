@@ -1,5 +1,5 @@
-*.font: xft:Hack Nerd Font:style=Regular:size=10
-
+*.font: xft:Hack Nerd Font Mono:style=Regular:size=10
+!, xft:Symbols Nerd Font:style=Regular:size=8
 
 ! Colors
 !  Transparent frame
