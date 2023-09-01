@@ -1,5 +1,5 @@
-*.font: xft:Hack Nerd Font Mono:style=Regular:size=10
-!, xft:Symbols Nerd Font:style=Regular:size=8
+*.font: xft:Hack Nerd Font:style=Regular:size=10
+*.letterSpace: 1
 
 ! Colors
 !  Transparent frame
@@ -13,17 +13,17 @@
 *.color1: #ff000f
 *.color9: #ff2740
 *.color2: #8ce10b
-*.color10: #abe15b
+*.color10:#abe15b
 *.color3: #ffb900
-*.color11: #ffd242
+*.color11:#ffd242
 *.color4: #008df8
-*.color12: #0092ff
+*.color12:#0092ff
 *.color5: #6d43a6
-*.color13: #9a5feb
+*.color13:#9a5feb
 *.color6: #00d8eb
-*.color14: #67fff0
+*.color14:#67fff0
 *.color7: #ffffff
-*.color15: #eeeeee
+*.color15:#eeeeee
 *.background: #0E1019
 *.foreground: #FFFAF4
 
@@ -33,19 +33,82 @@
 !*.color1: #A53C23
 !*.color9: #A53C23
 !*.color2: #7B9246
-!*.color10: #7B9246
+!*.color10:#7B9246
 !*.color3: #D3A04D
-!*.color11: #D3A04D
+!*.color11:#D3A04D
 !*.color4: #6C99BB
-!*.color12: #547C99
+!*.color12:#547C99
 !*.color5: #9F4E85
-!*.color13: #9F4E85
+!*.color13:#9F4E85
 !*.color6: #7DD6CF
-!*.color14: #7DD6CF
+!*.color14:#7DD6CF
 !*.color7: #D0D0D0
-!*.color15: #F5F5F5
-!!*.background: #222222 
+!*.color15:#F5F5F5
+!*.background: #222222 
 !*.foreground: #D0D0D0
+
+! Broadcast
+!*.color0: #000000
+!*.color1: #DA4939
+!*.color2: #519F50
+!*.color3: #FFD24A
+!*.color4: #6D9CBE
+!*.color5: #D0D0FF
+!*.color6: #6E9CBE
+!*.color7: #FFFFFF
+!*.color8: #323232
+!*.color9: #FF7B6B
+!*.color10:#83D182
+!*.color11:#FFFF7C
+!*.color12:#9FCEF0
+!*.color13:#FFFFFF
+!*.color14:#A0CEF0
+!*.color15:#FFFFFF
+!*.background: #2B2B2B
+!*.foreground: #E6E1DC
+!*.cursor: #E6E1DC
+
+! Darkside
+!*.color0: #000000
+!*.color1: #E8341C
+!*.color2: #68C256
+!*.color3: #F2D42C
+!*.color4: #1C98E8
+!*.color5: #8E69C9
+!*.color6: #1C98E8
+!*.color7: #BABABA
+!*.color8: #000000
+!*.color9: #E05A4F
+!*.color10:#77B869
+!*.color11:#EFD64B
+!*.color12:#387CD3
+!*.color13:#957BBE
+!*.color14:#3D97E2
+!*.color15:#BABABA
+!*.background: #222324
+!*.foreground: #BABABA
+!*.cursor: #BABABA
+
+! Obsidian
+!*.color0: #000000
+!*.color1: #A60001
+!*.color2: #00BB00
+!*.color3: #FECD22
+!*.color4: #3A9BDB
+!*.color5: #BB00BB
+!*.color6: #00BBBB
+!*.color7: #BBBBBB
+!*.color8: #555555
+!*.color9: #FF0003
+!*.color10:#93C863
+!*.color11:#FEF874
+!*.color12:#A1D7FF
+!*.color13:#FF55FF
+!*.color14:#55FFFF
+!*.color15:#FFFFFF
+!*.background: #283033
+!*.foreground: #CDCDCD
+!*.cursor: #CDCDCD
 
 
 ! Settings
@@ -57,6 +120,12 @@
 *.iso14755: false
 *.keysym.Shift-Control-V: eval:paste_clipboard
 *.keysym.Shift-Control-C: eval:selection_to_clipboard
-*.perl-ext-common: default,matcher
 *.url-launcher: /usr/bin/qutebrowser
 *.matcher.button: 1
+
+*.perl-ext-common: default,matcher,keyboard-select
+
+! Vim-like mode
+*.keysym.M-Escape: perl:keyboard-select:activate
+*.keysym.M-s: perl:keyboard-select:search
+*.keyboard-select.clipboard: true
